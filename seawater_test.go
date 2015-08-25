@@ -162,19 +162,12 @@ func TestSw_dpth(t *testing.T) {
 	}
 }
 
-// I'm just starting in Go and found it surprising that it has neither a
-// "toFixed" function (as in JavaScript), which would accomplish what you want,
-// nor even a "round" function.
-// I picked up a one-liner round function from elsewhere, and also made
-// toFixed() which depends on round():
-// from http://stackoverflow.com/
 // How can we truncate float64 type to a particular precision in golang?
 // Usage:
 // fmt.Println(toFixed(1.2345678, 0))  // 1.0
 // fmt.Println(toFixed(1.2345678, 1))  // 1.2
 // fmt.Println(toFixed(1.2345678, 2))  // 1.23
 // fmt.Println(toFixed(1.2345678, 3))  // 1.235 (rounded up)
-
 func round(num float64) int {
 	return int(num + math.Copysign(0.5, num))
 }
