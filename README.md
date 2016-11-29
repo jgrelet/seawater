@@ -1,5 +1,5 @@
-# seawater
-Go version of seawater (light)  [![Build Status](https://travis-ci.org/jgrelet/seawater.svg?branch=master)](https://travis-ci.org/jgrelet/seawater)
+# seawater   [![Build Status](https://travis-ci.org/jgrelet/seawater.svg?branch=master)](https://travis-ci.org/jgrelet/seawater)
+Minimalist Go version of seawater  
 
 Install:
 
